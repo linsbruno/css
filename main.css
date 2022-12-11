@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {   /* usa-se o sinal ">" para aplicar ao filho direto*/
+    background-color: #2f3640;
+    padding: 16px 0;
+    color: #f5f6fa;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* usado para espaçar igualmente os conteudos da tag*/
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a{
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto 0 auto;
+}
+
+.artigos{
+    display: flex; /*organiza as seções colocando-as uma ao lado da outra*/
+    flex-wrap: wrap;/* faz uma quebra do flex com o tamanho escolhido, 1100px na div .container*/
+    justify-content: space-between; /*o espaço que sobra é dividido igualmente entre as imagens*/
+}
+
+.artigos article img{
+   /* height: 180px;*/
+   width: 100%;
+}
+
+.artigos article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2,
+ .artigos article{
+    margin-bottom: 16px;
+}
+
+.artigos article h3{
+margin-top: 8px;
+margin-bottom: 16px;
+}
+
+.artigos article a{
+    background-color: blue;
+    color: #fff;
+    padding: 8px;
+    display:inline-block; /* quebra o display do botao*/
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.artigos article a:hover{
+    text-decoration: underline;
+}
+
+.artigos article p, 
+.artigos article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.artigos article h3{
+    font-size: 24px;
+}
+
+section h2{
+    font-size: 32px;
+}
+
+#esportes{
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#esportes .artigos article a{
+    background-color: #009432;
+}
+
+#economia {
+    background-color: #f8f59f;
+}
+
+#economia .artigos article a{
+    background-color: #ff9f1a;
+}
+
+#Entretenimento{
+    background-color: black;
+    color: white;
+}
+
+#Entretenimento .artigos article a{
+    background-color:rgba(10, 24, 25, .9);
+}
+
+#tecnologia .artigos article a{
+    background-color: #088fc4;
+}
+
+#tecnologia {
+    background: #59c5f0;
+    color: black;
+}
